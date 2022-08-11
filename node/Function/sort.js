@@ -47,4 +47,11 @@ function insertedSort(arr) {
   return arr;
 }
 let r = insertedSort(arr);
-console.log(r);
+
+
+
+//金额只允许2位小数
+// 有.后面
+let money = "12.000"
+let reg = /^\d*\.\d{1,2}$|^\d+$/
+console.log(reg.test(money))
